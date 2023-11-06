@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+  <link rel="stylesheet" href="link.css">
+
+  <link rel="shortcut icon" href="LOGO.png" type="image/x-icon">
+  <title>odds mtaani</title>
+</head>
+<body class="bg-gray-600">
+  <!-- Navbar starts here -->
+  <nav class="navbar bg-blue-600 text-white p-4 flex justify-between">
+    <div class="logo">
+      <img src="LOGO.png" alt="logo-image">
+      <a href="https://www.instagram.com/odds.mtaani/" class="social-link" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram"></i> <!-- Instagram icon -->
+      </a>
+      <a href="https://t.me/oddsmtaani" class="social-link" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-telegram"></i> <!-- Telegram icon -->
+      </a>
+    </div>
+    <div class="hidden md:flex nav-links space-x-4"> <!-- Hide on small screens (md: breakpoint) -->
+      <a href="vip.html" class="nav-link">VIP Games</a>
+      <a href="today2.html" class="nav-link">Today's Predictions</a>
+      <a href="about.html" class="nav-link">About</a>
+    </div>
+    <div class="md:hidden"> <!-- Show on small screens (md: breakpoint) -->
+      <!-- Hamburger button -->
+      <button id="hamburger-btn" class="text-white focus:outline-none">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Dropdown menu for small screens -->
+  <div id="dropdown-menu" class="hidden md:hidden bg-blue-600 text-white"> <!-- Hide on larger screens (md: breakpoint) -->
+    <a href="vip.html" class="block px-4 py-2">VIP Games</a>
+    <a href="today2.html" class="block px-4 py-2">Today's Predictions</a>
+    <a href="about.html" class="block px-4 py-2">About</a>
+  </div>
+  <!-- Navbar ends here -->
+
+  <!-- Main section starts here -->
+  <div class="container mx-auto p-4">
+    <P class="flex justify-center text-white-600">Top predictions</P>
+    <div class="overflow-x-auto">
+      <table class="w-full table-auto border-collapse border border-indigo-400">
+        <thead class="bg-red-500 text-white">
+          <tr>
+            <th class="py-2 px-4">Date</th>
+            <th class="py-2 px-4">League</th>
+            <th class="py-2 px-4">Tip</th>
+            <th class="py-2 px-4">Time</th>
+            <th class="py-2 px-4">Odds</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-blue-500 text-white">
+            <td class="py-2 px-4">6/9/2023</td>
+            <td class="py-2 px-4">Manchester City vs Arsenal</td>
+            <td class="py-2 px-4">Home team win</td>
+            <td class="py-2 px-4">21:45</td>
+            <td class="py-2 px-4">2.47</td>
+          </tr>
+          <tr class="bg-blue-500 text-white">
+            <td class="py-2 px-4">6/9/2023</td>
+            <td class="py-2 px-4">Manchester City vs Arsenal</td>
+            <td class="py-2 px-4">Home team win</td>
+            <td class="py-2 px-4">21:45</td>
+            <td class="py-2 px-4">2.47</td>
+          </tr>
+          <tr class="bg-blue-500 text-white">
+            <td class="py-2 px-4">6/9/2023</td>
+            <td class="py-2 px-4">Manchester City vs Arsenal</td>
+            <td class="py-2 px-4">Home team win</td>
+            <td class="py-2 px-4">21:45</td>
+            <td class="py-2 px-4">2.47</td>
+          </tr>
+          <tr class="bg-blue-500 text-white">
+            <td class="py-2 px-4">6/9/2023</td>
+            <td class="py-2 px-4">Manchester City vs Arsenal</td>
+            <td class="py-2 px-4">Home team win</td>
+            <td class="py-2 px-4">21:45</td>
+            <td class="py-2 px-4">2.47</td>
+          </tr>
+          <tr class="bg-blue-500 text-white">
+            <td class="py-2 px-4">6/9/2023</td>
+            <td class="py-2 px-4">Manchester City vs Arsenal</td>
+            <td class="py-2 px-4">Home team win</td>
+            <td class="py-2 px-4">21:45</td>
+            <td class="py-2 px-4">2.47</td>
+          </tr>
+          <tr class="bg-blue-500 text-white">
+            <td class="py-2 px-4">6/9/2023</td>
+            <td class="py-2 px-4">Manchester City vs Arsenal</td>
+            <td class="py-2 px-4">Home team win</td>
+            <td class="py-2 px-4">21:45</td>
+            <td class="py-2 px-4">2.47</td>
+          </tr>
+          <!-- More table rows... -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <!-- Main section ends here -->
+
+  <!-- Chat container starts here -->
+  <div class="container mx-auto p-4 mt-4 bg-white border border-gray-400 rounded-lg shadow">
+    <div class="chat-header bg-gray-600 text-white py-2 px-4 text-center">
+      <h2>Odds mtaani</h2>
+    </div>
+    <div class="chat-body p-4 max-h-48 overflow-y-auto" id="chat-body">
+      <div class="message received mb-2 flex justify-center">
+        <p>Odds mtaani chat box</p>
+      </div>
+      <!-- More chat messages... -->
+    </div>
+    <div class="chat-footer p-4 flex items-center">
+      <input type="text" id="message-input" placeholder="Type your message..." class="flex-grow py-2 px-4 border border-gray-400 rounded-lg">
+      <button id="send-btn" class="ml-4 py-2 px-4 bg-blue-600 text-white rounded-lg">Send</button>
+    </div>
+  </div>
+  <!-- Chat container ends here -->
+
+  <!-- Footer starts here -->
+  <footer class="text-center bg-gray-300 py-4 mt-4">
+    <ul class="flex justify-center mb-4">
+      <li class="mr-4">
+        <a href="contact.html" class="text-blue-600">Contact</a>
+      </li>
+      <li class="mr-4">
+        <a href="privacypolicy.html" class="text-blue-600">Privacy Policy</a>
+      </li>
+      <li>
+        <a href="terms_of_service.html" class="text-blue-600">Terms of Service</a>
+      </li>
+    </ul>
+    <p class="text-sm">&copy; 2023 Odds mtaani. All rights reserved.</p>
+  </footer>
+  <!-- Footer ends here -->
+  <script src="script.js"></script>
+  <script type="text/javascript">function add_chatinline(){var hccid=42230709;var nt=document.createElement("script");nt.async=true;nt.src="https://www.mylivechat.com/chatinline.aspx?hccid="+hccid;var ct=document.getElementsByTagName("script")[0];ct.parentNode.insertBefore(nt,ct);}
+    add_chatinline();</script>
+</body>
+</html>

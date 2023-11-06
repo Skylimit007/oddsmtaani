@@ -1,0 +1,17 @@
+.social-links {
+    display: flex;
+}
+  
+  .social-link {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 30px;
+  }
+  
+  .social-link:last-child {
+    margin-right: 0;
+  }
+  .social-link:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+  }
